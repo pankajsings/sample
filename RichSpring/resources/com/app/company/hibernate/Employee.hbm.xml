@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.app.company.entity.Employee"
+table="employee" schema="richspring">
+ 
+<id name="empId" type="long">
+<column name="EMP_ID" />
+<generator class="identity" />
+</id>
+<property name="name" type="string">
+<column name="NAME" length="45" not-null="true" />
+</property>
+<property name="age" type="string">
+<column name="age"  />
+</property>
+ <many-to-one name="department" class="com.app.company.entity.Department" column="department" cascade="all" not-null="true" lazy="false"/>
+</class>
+</hibernate-mapping>

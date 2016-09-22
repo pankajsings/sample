@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+<bean id="employeeService" 
+class="com.app.company.service.impl.EmployeeServiceImpl" >
+<property name="employeeDao" ref="employeeDao" />
+</bean>
+
+<bean id="employeeDao" 
+class="com.app.company.dao.impl.EmployeeDaoImpl" >
+<property name="hibernateTemplate" ref="genericHybernateTemplate" />
+</bean>
+
+<bean id="genericHybernateTemplate" 
+class="com.app.framework.GenericHybernateTemplate" >
+<constructor-arg name="sessionFactory" ref="sessionFactory" />
+</bean>
+
+</beans>
