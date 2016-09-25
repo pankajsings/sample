@@ -26,6 +26,7 @@ public class EmployeeBean implements Serializable{
 	public void setLang(String lang) {
 		this.lang = lang;
 	}
+	
 	public EmployeeService getEmployeeService() {
 		return employeeService;
 	}
