@@ -23,6 +23,7 @@ import com.app.framework.HibernateDaoSupport;
 
 public class EmployeeDaoImpl extends HibernateDaoSupport implements EmployeeDao, Serializable{
 
+	
 	@Override
 	public Employee createEmployee(Employee employee) {
 		// TODO Auto-generated method stub
