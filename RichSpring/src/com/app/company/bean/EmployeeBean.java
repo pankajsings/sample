@@ -18,8 +18,7 @@ public class EmployeeBean implements Serializable{
 	private String age;
 	private String lang;
 	
-	
-	
+		
 	public String getLang() {
 		return "Java";
 	}
