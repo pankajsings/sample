@@ -15,12 +15,14 @@ public class CustomerBean implements Serializable{
 	public CustomerServiceImpl getCustomerService() {
 		return customerService;
 	}
+	
 	public void setCustomerService(CustomerServiceImpl customerService) {
 		this.customerService = customerService;
 	}
 	public String getName() {
 		return name;
 	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
