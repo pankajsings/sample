@@ -15,7 +15,7 @@ public class CustomerBean implements Serializable{
 	public CustomerServiceImpl getCustomerService() {
 		return customerService;
 	}
-	//test
+	//test1
 	public void setCustomerService(CustomerServiceImpl customerService) {
 		this.customerService = customerService;
 	}
